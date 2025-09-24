@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Propiedades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Formulario CREAR / EDITAR -->
+        <section class="forms">
+            <h1>Gestión de Propiedades</h1>
+            <form id="propertyForm">
+                <input type="hidden" id="propertyId">
+                <input type="text" id="address" placeholder="Dirección" required>
+                <input type="number" id="price" placeholder="Precio" required>
+                <input type="number" id="size" placeholder="Tamaño (m²)" required>
+                <textarea id="description" placeholder="Descripción"></textarea>
+                <button type="submit" id="formButton">Agregar Propiedad</button>
+            </form>
+            <div class="response" id="responseMsg"></div>
+        </section>
+
+        <!-- Buscar / Editar por ID -->
+        <section class="forms">
+            <h2>Editar Propiedad por ID</h2>
+            <form id="editByIdForm">
+                <input type="number" id="editId" placeholder="ID de la propiedad" required>
+                <button type="submit">Cargar Propiedad</button>
+            </form>
+        </section>
+
+        <!-- Eliminar por ID -->
+        <section class="forms">
+            <h2>Eliminar Propiedad por ID</h2>
+            <form id="deleteByIdForm">
+                <input type="number" id="deleteId" placeholder="ID de la propiedad" required>
+                <button type="submit">Eliminar Propiedad</button>
+            </form>
+        </section>
+
+        <!-- Lista de propiedades -->
+        <section class="list">
+            <h2>Lista de Propiedades</h2>
+            <div id="properties"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffeef6; /* Fondo rosita pastel */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #444;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    min-height: 100vh;          
+}
+
+/* Contenedor principal */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center; /* Centra las cajas dentro de cada celda */
+}
+
+/* Encabezados */
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #ff80b3; /* Rosa pastel más suave */
+    text-shadow: 1px 1px 3px rgba(255, 128, 179, 0.3);
+}
+
+h2 {
+    color: #ff80b3;
+}
+
+/* Formularios y tarjetas */
+.forms, .property {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #ffb6d9; /* Bordes pastel */
+    width: 350px;
+    box-shadow: 0px 6px 12px rgba(255, 192, 203, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+
+.forms:hover, .property:hover {
+    transform: translateY(-5px);
+}
+
+/* Inputs */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ffcce0;
+    border-radius: 10px;
+    width: 90%;
+    margin: 8px 0;
+    background-color: #fff5fa;
+}
+
+/* Botones */
+button, input[type="button"] {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #ffb6d9; /* Rosa pastel */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(255, 182, 217, 0.4);
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #ff80b3;
+    transform: scale(1.05);
+}
+
+/* Propiedades */
+.property h3 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.property p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Imágenes lindas */
+.pet-banner {
+    width: 160px;        
+    height: 240px;       
+    object-fit: cover;   
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Mensajes */
+.response {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff4d94;
+}
